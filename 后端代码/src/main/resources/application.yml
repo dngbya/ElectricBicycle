@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/electric_vehicle
+    username: root
+    password: 123456
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+#∞¢¿Ô‘∆OSS≈‰÷√
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5t6MS3EJBZeYvMb63U2f
+    accessKeySecret: ekwttOJELBt5XHwlq6BVjRbhjICO3B
+    bucketName: web-framework-dngb
+server:
+  port: 8086
